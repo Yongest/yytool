@@ -1,0 +1,23 @@
+{
+  "name": "@zhang_yong/yytool",
+  "version": "0.0.1",
+  "description": "JS常用功能函数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yongest/yytool.git"
+  },
+  "keywords": [
+    "js功能函数",
+    "yytool"
+  ],
+  "author": "张勇",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yongest/yytool/issues"
+  },
+  "homepage": "https://github.com/Yongest/yytool#readme"
+}
