@@ -23,3 +23,16 @@ export let  hasChinese = (val)=>{
 	var reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
 	return reg.test(val)
 }
+
+// 判断是安卓，还是iOS
+export let getPhoneType=()=>{
+    var u = navigator.userAgent;
+    var isXiaomi = u.indexOf('XiaoMi') > -1; // 小米手机
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; // 其它安卓
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); // ios
+    if (isAndroid || isXiaomi) {
+      return 'android';
+    }else if (isIOS) {
+      return 'ios';
+    }
+}
