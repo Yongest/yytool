@@ -36,3 +36,11 @@ export let getPhoneType=()=>{
       return 'ios';
     }
 }
+// 获取本地时间，2021-08-21 ,不足10，签名补充0
+export let getLocalDate=()=>{
+	let localTime = new Date().toLocaleDateString() // 2012/09/23
+	let localTimeArr = localTime.split('/')
+	localTimeArr[1] = localTimeArr[1]>=10?localTimeArr[1]:'0'+localTimeArr[1] 
+	localTimeArr[2] = localTimeArr[2]>=10?localTimeArr[2]:'0'+localTimeArr[2] 
+	return localTimeArr.join('-')
+}
