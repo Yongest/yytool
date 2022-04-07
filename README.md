@@ -18,4 +18,7 @@ npm 发布流程
 ----------------
 版本回退
 npm unpublish  @zhang_yong/yytool@1.0.3 --force
+
+更新某个包
+npm update 包名
 ```
