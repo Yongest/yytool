@@ -9,7 +9,7 @@ export let removeChinese = (txt) => {
  * numberStr 19920817
  * return  年龄
  */
-export let calcuAge = (numberStr) => {
+export let calcAge = (numberStr) => {
 	let year = numberStr.slice(0, 4) // 获取生日
 	let month = numberStr.slice(4, 6) // 获取生日
 	let day = numberStr.slice(6, 8) // 获取生日
@@ -37,7 +37,7 @@ export let getPhoneType = () => {
 	}
 }
 // 获取日期时间，2021-08-21 ,不足10，签名补充0
-export let getLocalDate = (sign = '-') => {
+export let getFormatDate = (sign = '-') => {
 	let dateObj = new Date()
 	let year = dateObj.getFullYear()
 	let month = dateObj.getMonth() + 1
