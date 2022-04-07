@@ -14,4 +14,8 @@ npm 发布流程
 
  运行命令：npm version '0.0.3'（往上添加版本）
 运行命令： npm publish
+
+----------------
+版本回退
+npm unpublish  @zhang_yong/yytool@1.0.3 --force
 ```
