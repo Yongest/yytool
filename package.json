@@ -1,6 +1,6 @@
 {
   "name": "@zhang_yong/yytool",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JS常用功能函数",
   "main": "index.js",
   "scripts": {
